@@ -15,7 +15,7 @@ sudo chown -R $USER:$USER /var/www
 # Hosting Account
 
 - **Username:** hoanghuo
-- **Password:** QV2!52pcpW@3lW
+- **Password:** (Contact admin for password)
 
 # Project Setup Guide
 
@@ -55,20 +55,20 @@ sudo chown -R $USER:$USER /var/www
 
 - **Service:** [Yandex Mail](https://mail.yandex.com)
 - **Email:** huong.ph@fsofts.com
-- **Password:** Welcome@20082024
+- **Password:** (Contact admin for password)
 - **Guide:** [Google Drive](https://drive.google.com/drive/folders/1_vECcxVyx2ishZKRHF8CfpNmbW5Ix8U9?usp=share_link)
 
 ## OpenVPN
 
 - **Username:** huong.ph
-- **Password:** Welcome@20082024
+- **Password:** (Contact admin for password)
 - **Guide:** [Google Drive](https://drive.google.com/drive/folders/1SFSfwoaFieBYiUq9b3-nhpyAA1bi2AkY?usp=share_link)
 
 ## GitLab
 
 - **Service:** [GitLab](https://gitlab.com/huong.ph-visualweber)
 - **Email:** huong.ph@fsofts.com
-- **Password:** Welcome@20082024
+- **Password:** (Contact admin for password)
 - **Guide:** [YouTube](https://www.youtube.com/watch?v=lWpW6FxYPzE)
 
 ## OpenProject

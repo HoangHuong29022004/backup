@@ -71,4 +71,4 @@ DB_PASSWORD="Phh123@#"
     php artisan migrate
     ```
 
-## Xong chạy rồi chạy serve làm api thôi@@
+## Xong chạy rồi chạy serve làm api thôi@@ || postman thì trong zalo

@@ -71,4 +71,4 @@ DB_PASSWORD="Phh123@#"
     php artisan migrate
     ```
 
-## Cấu hình cơ sở dữ liệu
+## Xong chạy rồi chạy serve làm api thôi@@

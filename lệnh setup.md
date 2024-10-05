@@ -1,4 +1,4 @@
-# Project Setup Guide || db_luxadecor dự án tốt nghiệp
+# Hướng dẫn Cài đặt Dự án || db_luxadecor dự án tốt nghiệp
 
 ## Các bước
 
@@ -6,13 +6,8 @@ Clone dự án từ GitHub:
 [https://github.com/hungvan93/funiture_system](https://github.com/hungvan93/funiture_system)
 
 1. Mở thư mục dự án.
-2. Điều hướng đến thư mục backend:
 
-    ```sh
-    cd backend
-    ```
-
-3. Cài đặt các phụ thuộc của Composer:
+2. Cài đặt các phụ thuộc của Composer:
 
     ```sh
     composer install
@@ -24,19 +19,19 @@ Clone dự án từ GitHub:
     composer update symfony/css-selector symfony/event-dispatcher symfony/string symfony/yaml symfony/console
     ```
 
-4. Cài đặt các phụ thuộc của npm:
+3. Cài đặt các phụ thuộc của npm:
 
     ```sh
     npm install
     ```
 
-5. Sửa các lỗ hổng npm:
+4. Sửa các lỗ hổng npm:
 
     ```sh
     npm audit fix
     ```
 
-6. Sao chép `.env.example` thành `.env`:
+5. Sao chép `.env.example` thành `.env`:
 
     ```sh
     cp .env.example .env
@@ -53,22 +48,42 @@ DB_USERNAME=root
 DB_PASSWORD="Phh123@#"
 ```
 
-7. Tạo khóa ứng dụng:
+6. Tạo khóa ứng dụng:
 
     ```sh
     php artisan key:generate
     ```
 
-8. Tạo bí mật JWT:
+7. Tạo bí mật JWT:
 
     ```sh
     php artisan jwt:secret
     ```
 
-9. Chạy các lệnh di chuyển cơ sở dữ liệu:
+8. Chạy các lệnh di chuyển cơ sở dữ liệu:
 
     ```sh
     php artisan migrate
     ```
 
-## Xong chạy rồi chạy serve làm api thôi@@ || postman thì trong zalo
+9. Để chạy frontend:
+
+    ```sh
+    cd frontend
+    npm install
+    npm run dev
+    ```
+
+## Chạy ứng dụng
+
+- Để chạy API backend:
+
+    ```sh
+    php artisan serve
+    ```
+
+- Frontend đã được chạy bằng lệnh `npm run dev` ở bước 9.
+
+## Lưu ý
+
+Thông tin về Postman có trong Zalo.

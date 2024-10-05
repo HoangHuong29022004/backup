@@ -1,4 +1,4 @@
-# Hướng dẫn Cài đặt và Sử dụng Dự án || db_luxadecor dự án tốt nghiệp
+# Hướng dẫn Setup dự án || db_luxadecor dự án tốt nghiệp
 
 ## Lưu ý quan trọng
 

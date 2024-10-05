@@ -4,7 +4,7 @@
 
 1. Open the project directory.
 2. Navigate to the backend directory:
-    ```sh
+    ```shs
     cd backend
     ```
 3. Install composer dependencies:

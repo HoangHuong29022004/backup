@@ -117,7 +117,31 @@
    git push origin ten-nhanh-moi
    ```
 
-5. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub.
+5. Khi kết thúc công việc:
+   a. Đảm bảo bạn đã commit và push tất cả các thay đổi lên nhánh của mình.
+   b. Cập nhật nhánh của bạn với những thay đổi mới nhất từ base-v1:
+      ```sh
+      git checkout base-v1
+      git pull origin base-v1
+      git checkout ten-nhanh-moi
+      git merge base-v1
+      ```
+   c. Giải quyết các xung đột (nếu có) và commit các thay đổi.
+   d. Push lại nhánh của bạn:
+      ```sh
+      git push origin ten-nhanh-moi
+      ```
+
+6. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub:
+   a. Truy cập repository trên GitHub.
+   b. Chọn tab "Pull requests".
+   c. Nhấn nút "New pull request".
+   d. Chọn nhánh base-v1 làm nhánh cơ sở và nhánh của bạn làm nhánh so sánh.
+   e. Điền tiêu đề và mô tả chi tiết cho pull request của bạn.
+   f. Gán người review (nếu cần) và thêm các nhãn phù hợp.
+   g. Nhấn "Create pull request" để hoàn tất.
+
+7. Chờ đợi feedback và thực hiện các chỉnh sửa nếu cần thiết.
 
 ## Lưu ý quan trọng
 

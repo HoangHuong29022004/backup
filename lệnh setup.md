@@ -77,6 +77,10 @@ Nhánh chính của dự án là `base-v1`. Trước khi bắt đầu làm việ
   ```sh
   php artisan serve
   ```
+  - Và có hãy chạy seed db
+   ```sh
+  php artisan migrate:fresh --seed
+   ```
 
 - Frontend đã được chạy bằng lệnh `npm run dev` ở bước 10.
 

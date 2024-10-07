@@ -133,12 +133,19 @@
       ```
 
 6. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub:
+   
    a. Truy cập repository trên GitHub.
+   
    b. Chọn tab "Pull requests".
+   
    c. Nhấn nút "New pull request".
+   
    d. Chọn nhánh base-v1 làm nhánh cơ sở và nhánh của bạn làm nhánh so sánh.
+   
    e. Điền tiêu đề và mô tả chi tiết cho pull request của bạn.
+   
    f. Gán người review (nếu cần) và thêm các nhãn phù hợp.
+   
    g. Nhấn "Create pull request" để hoàn tất.
 
 7. Chờ đợi feedback và thực hiện các chỉnh sửa nếu cần thiết.

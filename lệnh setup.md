@@ -77,10 +77,12 @@ Nhánh chính của dự án là `base-v1`. Trước khi bắt đầu làm việ
   ```sh
   php artisan serve
   ```
-  - Và có hãy chạy seed db
-   ```sh
+
+- Để tạo dữ liệu mẫu cho database:
+  ```sh
   php artisan migrate:fresh --seed
-   ```
+  ```
+  Lưu ý: Lệnh này sẽ xóa tất cả dữ liệu hiện có và tạo lại cấu trúc database cùng với dữ liệu mẫu. Chỉ sử dụng khi bạn muốn reset hoàn toàn database.
 
 - Frontend đã được chạy bằng lệnh `npm run dev` ở bước 10.
 

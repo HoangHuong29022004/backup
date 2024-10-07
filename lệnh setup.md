@@ -2,7 +2,14 @@
 
 ## Lưu ý quan trọng
 
-Nhánh chính của dự án là `base-v1`. Trước khi bắt đầu làm việc, hãy đảm bảo bạn đã pull code mới nhất từ nhánh này.
+1. Không được thay đổi trực tiếp nhánh `main` nếu không có sự cho phép cụ thể.
+2. Luôn cập nhật code mới nhất từ nhánh `base-v1` trước khi bắt đầu làm việc:
+   ```sh
+   git checkout base-v1
+   git pull origin base-v1
+   ```
+3. Tạo nhánh mới cho mỗi tính năng hoặc sửa lỗi bạn đang làm việc.
+4. Thông tin chi tiết về API và cách sử dụng Postman được chia sẻ trong nhóm Zalo của dự án.
 
 ## Các bước cài đặt
 
@@ -112,6 +119,13 @@ Nhánh chính của dự án là `base-v1`. Trước khi bắt đầu làm việ
 
 5. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub.
 
-## Lưu ý
+## Lưu ý quan trọng
 
-Thông tin về Postman có trong Zalo.
+1. Không được thay đổi trực tiếp nhánh `main` nếu không có sự cho phép cụ thể.
+2. Luôn cập nhật code mới nhất từ nhánh `base-v1` trước khi bắt đầu làm việc:
+   ```sh
+   git checkout base-v1
+   git pull origin base-v1
+   ```
+3. Tạo nhánh mới cho mỗi tính năng hoặc sửa lỗi bạn đang làm việc.
+4. Thông tin chi tiết về API và cách sử dụng Postman được chia sẻ trong nhóm Zalo của dự án.

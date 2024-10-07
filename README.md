@@ -119,6 +119,7 @@
 
 5. Khi kết thúc công việc:
    a. Đảm bảo bạn đã commit và push tất cả các thay đổi lên nhánh của mình.
+   
    b. Cập nhật nhánh của bạn với những thay đổi mới nhất từ base-v1:
       ```sh
       git checkout base-v1

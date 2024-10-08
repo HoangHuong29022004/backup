@@ -11,6 +11,56 @@
 3. Tạo nhánh mới cho mỗi tính năng hoặc sửa lỗi bạn đang làm việc.
 4. Thông tin chi tiết về API và cách sử dụng Postman được chia sẻ trong nhóm Zalo của dự án.
 
+## Hướng dẫn tạo SSH key và thêm vào tài khoản GitHub
+
+1. Tạo SSH key:
+   ```sh
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+   Thay thế "your_email@example.com" bằng địa chỉ email bạn sử dụng cho GitHub.
+
+2. Khi được nhắc "Enter a file in which to save the key," nhấn Enter để chấp nhận vị trí file mặc định.
+
+3. Nhập mật khẩu cho SSH key khi được yêu cầu (hoặc để trống nếu bạn không muốn sử dụng mật khẩu).
+
+4. Thêm SSH key vào ssh-agent:
+   ```sh
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_rsa
+   ```
+
+5. Sao chép SSH key vào clipboard:
+   - Trên macOS:
+     ```sh
+     pbcopy < ~/.ssh/id_rsa.pub
+     ```
+   - Trên Linux:
+     ```sh
+     xclip -sel clip < ~/.ssh/id_rsa.pub
+     ```
+   - Trên Windows (PowerShell):
+     ```sh
+     cat ~/.ssh/id_rsa.pub | clip
+     ```
+
+6. Thêm SSH key vào tài khoản GitHub:
+   a. Đăng nhập vào GitHub.
+   b. Nhấp vào ảnh hồ sơ của bạn, sau đó chọn "Settings".
+   c. Trong thanh bên trái, chọn "SSH and GPG keys".
+   d. Nhấp vào "New SSH key" hoặc "Add SSH key".
+   e. Trong trường "Title", thêm một mô tả cho key (ví dụ: "Personal Laptop").
+   f. Dán key của bạn vào trường "Key".
+   g. Nhấp "Add SSH key".
+   h. Xác nhận bằng mật khẩu GitHub của bạn nếu được yêu cầu.
+
+7. Kiểm tra kết nối:
+   ```sh
+   ssh -T git@github.com
+   ```
+   Nếu bạn thấy thông báo "Hi username! You've successfully authenticated, but GitHub does not provide shell access.", điều đó có nghĩa là bạn đã thiết lập thành công SSH key.
+
+Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH để clone và push các repository GitHub mà không cần nhập username và password mỗi lần.
+
 ## Các bước cài đặt
 
 1. Clone dự án từ GitHub và chuyển sang nhánh base-v1:
@@ -118,9 +168,7 @@
    ```
 
 5. Khi kết thúc công việc:
-
    a. Đảm bảo bạn đã commit và push tất cả các thay đổi lên nhánh của mình.
-
    b. Cập nhật nhánh của bạn với những thay đổi mới nhất từ base-v1:
       ```sh
       git checkout base-v1
@@ -134,31 +182,6 @@
       git push origin ten-nhanh-moi
       ```
 
-6. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub:
-   
-   a. Truy cập repository trên GitHub.
-   
-   b. Chọn tab "Pull requests".
-   
-   c. Nhấn nút "New pull request".
-   
-   d. Chọn nhánh base-v1 làm nhánh cơ sở và nhánh của bạn làm nhánh so sánh.
-   
-   e. Điền tiêu đề và mô tả chi tiết cho pull request của bạn.
-   
-   f. Gán người review (nếu cần) và thêm các nhãn phù hợp.
-   
-   g. Nhấn "Create pull request" để hoàn tất.
+6. Tạo Pull Request từ nhánh của bạn vào nhánh base-v1 trên GitHub.
 
 7. Chờ đợi feedback và thực hiện các chỉnh sửa nếu cần thiết.
-
-## Lưu ý quan trọng
-
-1. Không được thay đổi trực tiếp nhánh `main` nếu không có sự cho phép cụ thể.
-2. Luôn cập nhật code mới nhất từ nhánh `base-v1` trước khi bắt đầu làm việc:
-   ```sh
-   git checkout base-v1
-   git pull origin base-v1
-   ```
-3. Tạo nhánh mới cho mỗi tính năng hoặc sửa lỗi bạn đang làm việc.
-4. Thông tin chi tiết về API và cách sử dụng Postman được chia sẻ trong nhóm Zalo của dự án.

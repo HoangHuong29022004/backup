@@ -65,7 +65,8 @@ Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH đ�
 
 1. Clone dự án từ GitHub và chuyển sang nhánh base-v1:
    ```sh
-   git clone https://github.com/hungvan93/funiture_system.git
+   https://github.com/PhamHoangHuong/funiture_system
+   git clone git@github.com:PhamHoangHuong/funiture_system.git
    cd funiture_system
    git checkout base-v1
    git pull origin base-v1
@@ -99,11 +100,11 @@ Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH đ�
    Thêm nội dung sau vào tệp `.env` của bạn:
    ```env
    DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
+   DB_HOST=103.169.35.190
    DB_PORT=3306
    DB_DATABASE=db_luxadecor
-   DB_USERNAME=root
-   DB_PASSWORD="Phh123@#"
+   DB_USERNAME=db_luxadecor
+   DB_PASSWORD="QV2!52pcpW@3lW"
    ```
 
 7. Tạo khóa ứng dụng:
@@ -121,11 +122,9 @@ Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH đ�
    php artisan migrate
    ```
 
-10. Để cài đặt và chạy frontend:
+10. Chạy dự án
     ```sh
-    cd frontend
-    npm install
-    npm run dev
+    npm run start
     ```
 
 ## Chạy ứng dụng
@@ -134,11 +133,7 @@ Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH đ�
   ```sh
   php artisan serve
   ```
-
-- Để tạo dữ liệu mẫu cho database:
-  ```sh
-  php artisan migrate:fresh --seed
-  ```
+  
   Lưu ý: Lệnh này sẽ xóa tất cả dữ liệu hiện có và tạo lại cấu trúc database cùng với dữ liệu mẫu. Chỉ sử dụng khi bạn muốn reset hoàn toàn database.
 
 - Frontend đã được chạy bằng lệnh `npm run dev` ở bước 10.

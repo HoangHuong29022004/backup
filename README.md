@@ -98,12 +98,12 @@ Sau khi hoàn thành các bước trên, bạn có thể sử dụng URL SSH đ�
    ```
    Thêm nội dung sau vào tệp `.env` của bạn:
    ```env
-DB_CONNECTION=mysql
-DB_HOST=103.169.35.190
-DB_PORT=3306
-DB_DATABASE=db_luxadecor
-DB_USERNAME=db_luxadecor
-DB_PASSWORD="QV2!52pcpW@3lW"
+      DB_CONNECTION=mysql
+      DB_HOST=103.169.35.190
+      DB_PORT=3306
+      DB_DATABASE=db_luxadecor
+      DB_USERNAME=db_luxadecor
+      DB_PASSWORD="QV2!52pcpW@3lW"
    ```
 
 7. Tạo khóa ứng dụng:
